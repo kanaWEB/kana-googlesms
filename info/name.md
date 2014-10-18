@@ -1,1 +1,1 @@
-Notifications vocales
+Google Calendar (SMS)

@@ -1,1 +1,1 @@
-Launch an MP3 from the folder "sounds"
+Send an SMS thanks to Google Calendar

@@ -1,1 +1,1 @@
-Notifications Google Agenda (sms)
+Google Agenda (SMS)

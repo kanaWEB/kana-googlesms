@@ -1,0 +1,29 @@
+<?
+if(file_exists(CONFIG_DIR."/gcsms")){
+	$cmd = "/usr/local/bin/gcsms -c ".CONFIG_DIR."/gcsms"." ls";
+
+	exec($cmd,$output,$exitcode);
+	//var_dump($output);
+	//var_dump($exitcode);
+	foreach($output as $calendar){
+		$data[] = [
+		"text" => $calendar,
+		"value" => $calendar
+		];
+	}
+}
+else{
+	$data[] = [
+	"text" => "No configuration available",
+	"value" => ""
+	];
+}
+
+if(!isset($data)){
+	$data[] = [
+	"text" => "No calendar founded",
+	"value" => ""
+	];
+}
+
+?>

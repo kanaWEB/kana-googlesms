@@ -1,1 +1,1 @@
-Lance un MP3 du dossier sons
+Envoyer un SMS à l'aide de Google Agenda
