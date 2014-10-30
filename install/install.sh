@@ -35,8 +35,8 @@ firstcalendar=$(echo $firstcalendar|awk '{print $1}')
 /usr/local/bin/gcsms -c "/etc/kana/gcsms" send $firstcalendar "This is a test" 
 else
 
-        #apt-get -f install python-pip
-        #pip install gcsms
+        apt-get -f install python-pip
+        pip install gcsms
         touch /root/.gcsms
 cat <<\EOF > /root/.gcsms &&
 [global]
