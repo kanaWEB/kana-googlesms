@@ -1,6 +1,6 @@
-<?
-if(file_exists(CONFIG_DIR."/gcsms")){
-	$cmd = "/usr/local/bin/gcsms -c ".CONFIG_DIR."/gcsms"." ls";
+<?php
+if(file_exists(KANA_DIR."/gcsms")){
+	$cmd = "/usr/local/bin/gcsms -c ".KANA_DIR."/gcsms"." ls";
 
 	exec($cmd,$output,$exitcode);
 	//var_dump($output);
