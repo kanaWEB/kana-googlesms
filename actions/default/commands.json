@@ -1,0 +1,15 @@
+{
+  "default": {
+    "command": "gcsend",
+    "usage" : "gcsend calendar text",
+    "args": {
+      "calendar": {
+      	"type": "Actions"
+      },
+      "text": {
+        "type": "Actions",
+        "modifier": "Data"
+      }
+    }
+  }
+}

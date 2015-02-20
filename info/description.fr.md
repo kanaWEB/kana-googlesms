@@ -1,1 +1,0 @@
-Utiliser Google Agenda à l'aide de gcsms (d'oxplot) pour vous envoyer des sms

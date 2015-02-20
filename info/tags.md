@@ -1,1 +1,0 @@
-googlesms,sms,google agenda,notification,gcsms

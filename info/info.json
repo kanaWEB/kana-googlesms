@@ -1,0 +1,12 @@
+{
+   "description" : "Use Google agenda thanks to gcsms (by oxplot) to send SMS",
+   "name" : "Google Calendar (SMS)",
+   "tags" : {
+      "googlesms" : {},
+      "sms" : {},
+      "google agenda" : {},
+      "notification" : {},
+      "gcsms" : {}
+   },
+   "type" : "notification"
+}
