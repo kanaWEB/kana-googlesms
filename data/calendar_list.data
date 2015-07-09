@@ -1,29 +1,27 @@
 <?php
-if(file_exists(KANA_DIR."/gcsms")){
-	$cmd = "/usr/local/bin/gcsms -c ".KANA_DIR."/gcsms"." ls";
+if (file_exists("/opt/user/config/gcsms/gcsms")) {
+    $cmd = "/opt/piget/gcsms/gcsmsList";
 
-	exec($cmd,$output,$exitcode);
-	//var_dump($output);
-	//var_dump($exitcode);
-	foreach($output as $calendar){
-		$data[] = [
-		"text" => $calendar,
-		"value" => $calendar
-		];
-	}
-}
-else{
-	$data[] = [
-	"text" => "No configuration available",
-	"value" => ""
-	];
-}
+    exec($cmd, $output, $exitcode);
 
-if(!isset($data)){
-	$data[] = [
-	"text" => "No calendar founded",
-	"value" => ""
-	];
+    //var_dump($output);
+    var_dump($exitcode);
+    foreach ($output as $calendar) {
+        $data[] = [
+        "text" => $calendar,
+        "value" => $calendar
+        ];
+    }
+} else {
+    $data[] = [
+    "text" => "No configuration available",
+    "value" => ""
+    ];
 }
 
-?>
+if (!isset($data)) {
+    $data[] = [
+    "text" => "No calendar founded",
+    "value" => ""
+    ];
+}

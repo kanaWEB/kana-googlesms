@@ -1,6 +1,6 @@
 {
   "default": {
-    "command": "gcsend",
+    "command": "/opt/piget/gcsms/gcsmsSend",
     "usage" : "gcsend calendar text",
     "args": {
       "calendar": {
